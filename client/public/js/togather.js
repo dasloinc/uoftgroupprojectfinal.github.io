@@ -57,7 +57,8 @@ if ("undefined" == typeof jQuery)
       (s.prototype.expandOnHover = function () {
         i(e).hover(
           function () {
-            i("body").is(l + t) && i(window).width() > this.options.collapseScreenSize && this.expand();
+            // i("body").is(l + t) && i(window).width() > this.options.collapseScreenSize && this.expand();
+            i("body").is(l) && i(window).width() > this.options.collapseScreenSize;
           }.bind(this),
           function () {
             i("body").is(c) && this.collapse();

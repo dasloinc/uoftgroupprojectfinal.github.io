@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 const PORT     = process.env.PORT || 3001;
 const app      = express();
 
+const cookieParser = require('cookie-parser');
+
 // Define middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -21,6 +23,11 @@ if (process.env.NODE_ENV === "production") {
 
 // Routes
 require("./routes/htmlRoutes")(app)
+require("./routes/apiRoutes")(app)
+
+const userRouter = require('./routes/User');
+app.use('/user', userRouter);
+app.use(cookieParser());
 
 // Connect to the Mongo DB
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://alphateam:password123@ds029496.mlab.com:29496/heroku_mnws26x7", {
@@ -28,6 +35,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/togather", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
+const idConnection = mongoose.connection;
+idConnection.on('error', () => console.log("ERROR"));
+idConnection.on('open', () => console.log("SUCCESS"));
 
 // Start the API server
 app.listen(PORT, function() {

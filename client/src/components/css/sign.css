@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+} */
+/* b,
+strong {
+  font-weight: 700;
+} */
+/* body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fff;
+} */
+/* @media print {
+  body {
+    background-color: #fff;
+  }
+} */
+/* body::-webkit-backdrop {
+  background-color: #fff;
+}
+body::backdrop {
+  background-color: #fff;
+} */
+.sign_m-0 {
+  margin: 0;
+}
+.sign_m-custom {
+  margin: 24px 0 16px;
+}
+.sign_m-t-8 {
+  margin-top: 8px;
+}
+.sign_m-t-24 {
+  margin-top: 24px;
+}
+.sign_m-t-40 {
+  margin-top: 40px;
+}
+.sign_m-t-b {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.sign_full-height {
+  height: 100vh;
+}
+.sign_full-width {
+  width: 100%;
+}
+.sign_align-center {
+  text-align: center;
+}
+.sign_underline-hover {
+  text-decoration: none;
+}
+.sign_underline-hover:hover {
+  text-decoration: underline;
+}
+.sign_color-default {
+  color: rgba(0, 0, 0, 0.54);
+}
+.sign_color-green {
+  color: #17B206;
+}
+.sign_color-red {
+  color: #dc004e;
+}
+.sign_logo {
+  margin: 8px;
+  border: #e0e0e0 dotted 1px;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sign_bckg-cover {
+  background-size: cover;
+  background-color: #fafafa;
+  background-image: url(../pages/supplementary/images/togather.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sign_sign-in {
+  margin: 64px 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sign_sign-up {
+  display: flex;
+  margin-top: 64px;
+  align-items: center;
+  flex-direction: column;
+}
+.sign_input-default {
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.sign_typography-h {
+  font-size: 1.5rem;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0;
+}
+.sign_typography-body {
+  font-size: 0.875rem;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+.sign_container-root {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 600px) {
+  .sign_container-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (min-width: 0px) {
+  .sign_container-max-width {
+    max-width: 444px;
+  }
+}
+.sign_logo-avatar {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.25rem;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  justify-content: center;
+}
+.sign_grid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.sign_grid-item {
+  margin: 0;
+  box-sizing: border-box;
+}
+.sign_grid-spacing-xs-1 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.sign_grid-spacing-xs-1 > .sign_grid-item {
+  padding: 8px;
+}
+.sign_grid-spacing-xs-2 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.sign_grid-sm-1 {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+@media (min-width: 600px) {
+  .sign_grid-sm-2 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .sign_grid-sm-3 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+}
+@media (min-width: 960px) {
+  .sign_grid-md-1 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .sign_grid-md-2 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+}
+.sign_form-control {
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+}
+.sign_input-base {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+}
+.sign_input-base-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: 0 0;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
+  -webkit-tap-highlight-color: transparent;
+}
+.sign_input-base-input::-webkit-input-placeholder,
+.sign_input-base-input::-moz-placeholder,
+.sign_input-base-input::-ms-input-placeholder,
+.sign_input-base-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -moz-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -ms-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.sign_input-base-input:focus {
+  outline: 0;
+}
+.sign_input-base-input:invalid {
+  box-shadow: none;
+}
+.sign_input-base-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.sign_input-base-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 5000s;
+}
+.sign_outlined-input {
+  padding: 18.5px 14px;
+}
+.sign_outlined-input:-webkit-autofill {
+  border-radius: inherit;
+}
+.sign_outlined-input-base {
+  position: relative;
+  border-radius: 4px;
+}
+.sign_outlined-input-base:hover .sign_outlined-input-notched {
+  border-color: rgba(0, 0, 0, 0.87);
+}
+@media (hover: none) {
+  .sign_outlined-input-base:hover .sign_outlined-input-notched {
+    border-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.sign_outlined-input-notched {
+  border-color: rgba(0, 0, 0, 0.23);
+}
+.sign_paper {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  background-color: #fff;
+}
+.sign_paper-shadow {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+.sign_button-base {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.sign_button-base::-moz-focus-inner {
+  border-style: none;
+}
+@media print {
+  .sign_button-base {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+.sign_button-default {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.sign_button-default:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@media (hover: none) {
+  .sign_button-default:hover {
+    background-color: transparent;
+  }
+}
+.sign_button-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  background-color: #e0e0e0;
+}
+.sign_button-contained:hover {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #d5d5d5;
+}
+.sign_button-contained:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .sign_button-contained:hover {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    background-color: #e0e0e0;
+  }
+}
+.sign_button-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.sign_button-bckg-green {
+  color: #fff;
+  background-color: #19CA06;
+}
+.sign_button-bckg-green:hover {
+  background-color: #128A05;
+}
+.sign_button-bckg-red {
+  color: #fff;
+  background-color: #dc004e;
+}
+.sign_button-bckg-red:hover {
+  background-color: #9a0036;
+}
+@media (hover: none) {
+  .sign_button-bckg-green:hover {
+    background-color: #19CA06;
+  }
+  .sign_button-bckg-red:hover {
+    background-color: #dc004e;
+  }
+}

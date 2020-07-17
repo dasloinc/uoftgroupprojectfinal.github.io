@@ -729,9 +729,9 @@
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-.sidebar-menu .active > .treeview-menu {
+/* .sidebar-menu .active > .treeview-menu {
   display: block;
-}
+} */
 .sidebar-menu:hover {
   overflow: visible;
 }
@@ -810,7 +810,8 @@
   outline: none;
 }
 .treeview-menu {
-  display: none;
+  /* display: none; */
+  display: block;
   list-style: none;
   padding: 0;
   margin: 0;

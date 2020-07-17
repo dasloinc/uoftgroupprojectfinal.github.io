@@ -1,0 +1,130 @@
+.createEvent-title {
+  padding-left: 50px;
+}
+
+.createEvent-container {
+  /* padding-top: 5%; */
+  /* padding-left: 5%; */
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.createEvent-form-container {
+    padding: 20px;
+    margin: 20px 200px 20px 200px;
+    
+    /* padding-bottom: 10px; */
+}
+.createEvent-right-row {
+  margin-left: 40px;
+}
+
+.calendar-container {
+  width: auto;
+}
+
+.createEvent-input {
+    margin: 10px;
+}
+
+.createEvent-notes {
+    margin:10px;
+    height: 100%;
+    margin-left: 20px;
+}
+
+
+/* columns */
+.createEvent-column {
+    float: left;
+    width: 50%;
+    margin-left: 20px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+/* .createEvent-textArea {
+  height: 924px;
+  width: 100%;
+} */
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .createEvent-btnAjust {
+   margin-right: auto;
+  }
+
+  .createEvent-time-form {
+    margin-top: 10px;
+  }
+
+  
+
+  @media (max-width: 770px) {
+    .createEvent-container {
+      padding: 5%;
+    }
+    .createEvent-input {
+      margin: 100px;
+    }
+
+    .createEvent-right-row {
+      margin-left: 0px;
+      width: 83%;
+    }
+
+    .createEvent-button {
+      padding-left: 5%;
+    }
+  /* .createEvent-form-container { */
+    /* padding: 20px; */
+    /* margin: 20px 200px 20px 200px; */
+    
+    /* padding-bottom: 10px; */
+/* } */
+  }
+
+.createEvent-m-ml {
+  margin: 10px 10px 20px;
+  margin-left: 0;
+}
+
+.createEvent-d-block {
+  display: block;
+}
+
+.createEvent-d-inline {
+  display: inline;
+}
+
+.btn-custom {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.385rem .785rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.createEvent-button {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.createEvent-mapDescription {
+  margin-right: 30px;
+  width: 60%;
+}

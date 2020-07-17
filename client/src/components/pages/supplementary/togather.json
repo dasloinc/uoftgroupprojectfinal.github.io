@@ -61,6 +61,50 @@
           }
         ]
       }
+    ],
+    "savedEvents": [
+      [
+        {
+          "eventId": "1",
+          "eventTitle": "Soccer",
+          "eventLocation": "High Park",
+          "eventDate": "7/15/2020",
+          "eventStartTime": "8:30am",
+          "eventEndTime": "11:00am",
+          "eventStatus": "Open",
+          "eventParticipants": "7"
+        },
+        {
+          "eventId": "2",
+          "eventTitle": "Volley ball",
+          "eventLocation": "High Park",
+          "eventDate": "7/15/2020",
+          "eventStartTime": "8:30am",
+          "eventEndTime": "11:00am",
+          "eventStatus": "Open",
+          "eventParticipants": "7"
+        },
+        {
+          "eventId": "3",
+          "eventTitle": "Basketball",
+          "eventLocation": "High Park",
+          "eventDate": "7/15/2020",
+          "eventStartTime": "8:30am",
+          "eventEndTime": "11:00am",
+          "eventStatus": "closed",
+          "eventParticipants": "7"
+        },
+        {
+          "eventId": "4",
+          "eventTitle": "Tennis",
+          "eventLocation": "High Park",
+          "eventDate": "7/15/2020",
+          "eventStartTime": "8:30am",
+          "eventEndTime": "11:00am",
+          "eventStatus": "Open",
+          "eventParticipants": "7"
+        }
+      ]
     ]
   }
 ]

@@ -23,7 +23,7 @@ class Event extends Component {
         </h1>
         <ol className="breadcrumb">
           <li>
-            <a href="/"><i className="fas fa-door-open"></i><span className="text-orange"> Main</span></a>
+            <a href="/home"><i className="fas fa-door-open"></i><span className="text-orange"> Main</span></a>
           </li>
           <li>Events</li>
         </ol>
@@ -39,7 +39,7 @@ class Event extends Component {
                 headtitle={events.headtitle} 
                 badge={events.badge} 
                 caption={events.caption} 
-                example={events.example} 
+                example={events.example}
                 href={events.href}
               />
             ))

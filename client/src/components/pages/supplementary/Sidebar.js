@@ -6,8 +6,16 @@ import "../../css/togather.css";
 
 class Sidebar extends Component {
   state = {
-    togatherList
+    togatherList,
+    name : "Anonymous"
   };
+
+  componentWillMount() {
+    let name = localStorage.getItem('userEmail')
+    console.log(name)
+    if (!name){name="Anonymous"} 
+    this.setState({name : name})
+  }
 
   render() {
     return (
@@ -18,7 +26,7 @@ class Sidebar extends Component {
               <img src="./assets/icons/anonymous.png" className="img-circle" alt="User" />
             </div>
             <div className="pull-left info">
-              <span>Anonymous</span>
+              <span>{this.state.name}</span>
               <p><i className="fas fa-check-double text-lime"></i> Online</p>
             </div>
           </div>
@@ -34,13 +42,14 @@ class Sidebar extends Component {
           </form> */}
           <ul className="sidebar-menu" data-widget="tree">
             <li className="header">MAIN</li>
-            <li className="treeview">
+            {/* <li className="treeview"> */}
+            <li>
               <a href="/events">
                 <i className="far fa-list-alt"></i>
                 <span className="m-l-sm">Events</span>
-                <span className="pull-right-container">
+                {/* <span className="pull-right-container">
                   <i className="fa fa-angle-left pull-right"></i>
-                </span>
+                </span> */}
               </a>
               <ul className="treeview-menu">
                 {/* ROUTE to every card event */}
@@ -70,6 +79,7 @@ class Sidebar extends Component {
           </ul>
         </section>
       </aside>
+
     );
   }
 }

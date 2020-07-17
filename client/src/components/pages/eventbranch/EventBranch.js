@@ -6,6 +6,8 @@ import "../../css/mainwindow.css";
 import "../../css/card.css";
 
 
+
+
 class EventBranch extends Component {
   state = {
     togatherList
@@ -28,7 +30,7 @@ class EventBranch extends Component {
           </h1>
           <ol className="breadcrumb">
             <li>
-              <a href="/"><i className="fas fa-door-open"></i><span className="text-orange"> Main</span></a>
+              <a href="/home"><i className="fas fa-door-open"></i><span className="text-orange"> Main</span></a>
             </li>
             <li>
             <a href="/events"><span className="text-orange"> Events</span></a>
@@ -38,10 +40,11 @@ class EventBranch extends Component {
         </section>
 
         <section className="content">
-          <div class="row">
+          <div className="row">
             {eventObject[0][0].category.map(session =>
               (
                 <CardEventSpecific  
+                  eventid={eventObject[0][0].id} 
                   headtitle={eventObject[0][0].headtitle} 
                   category={session}
                 />

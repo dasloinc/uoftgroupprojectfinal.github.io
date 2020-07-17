@@ -5,7 +5,7 @@ import "../../css/togather.css";
 function Header() {
   return (
     <header className="main-header">
-      <Link className="logo" to="/">
+      <Link className="logo" to="/home">
         <img src="./assets/icons/logo-main.png" alt="Logo" />
         <b> to.</b>gather
       </Link>
